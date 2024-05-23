@@ -1,0 +1,198 @@
+@import url("../css/fontawesome-all.min.css");
+
+/* navbar css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #434948;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/* dropdown css */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  min-width: 180px;
+  top: calc(100% + 0.25rem);
+  background-color: #434948;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-menu a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
+/* table css */
+
+.table-container {
+  padding: 0 10%;
+  margin: 40px auto 0;
+}
+
+/* for dashboard */
+
+.card .card-header {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 0 none;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 15px;
+}
+.card .card-header .card-title {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 0;
+	padding: 5px 0;
+}
+
+.member-panel .contact-list > li:last-child {
+	border-bottom: 0;
+}
+.member-panel .card-body {
+	overflow-y: auto;
+	height: 275px;
+	-webkit-overflow-scrolling: touch;
+	padding: 0;
+}
+.contact-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.contact-list > li {
+	border-bottom: 1px solid #eaeaea;
+	border-radius: inherit;
+	padding: 10px;
+	background-color:#fff;
+}
+.contact-cont {
+	position: relative;
+}
+.contact-info {
+	padding: 0 30px 0 50px;
+}
+.contact-date {
+	color: #888;
+	font-size: 12px;
+}

@@ -1,0 +1,15 @@
+body {
+    width: 100%;
+    height: 400px;
+    background-image: url('aja_bg.jpg');
+    background-size: cover;
+    margin: 0px;
+  }
+
+label {
+    color: white;
+}
+
+div {
+    color: white;
+}
